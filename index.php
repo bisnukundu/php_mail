@@ -1,6 +1,6 @@
 <?php
 if (isset($_REQUEST["submit"])) {
-    $email ="From:".$_REQUEST["email"] . "\r\r";
+    $email ="From:".$_REQUEST["email"] . "\r\n";
     $subject = $_REQUEST["subject"];
     $message = $_REQUEST["message"];
     if(mail("bisnukundu@gmail.com",$subject,$message,$email)){
